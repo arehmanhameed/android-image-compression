@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.gallery_image: {
-//                intent = new Intent(this, CompressGalleryImage.class);
+                intent = new Intent(this, CompressGalleryImage.class);
                 break;
             }
             case R.id.camera_image: {
