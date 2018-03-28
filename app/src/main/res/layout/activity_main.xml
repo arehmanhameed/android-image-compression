@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="com.arehmanhameed.imagecompression.MainActivity">
+
+	<Button
+		android:id="@+id/gallery_image"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:onClick="onClick"
+		android:text="Compress Gallery Image"/>
+
+	<Button
+		android:id="@+id/camera_image"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:onClick="onClick"
+		android:text="Compress Camera Image"/>
+
+	<Button
+		android:id="@+id/gallery_image_store"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:onClick="onClick"
+		android:text="Compress  &amp; store Gallery Image"/>
+
+	<Button
+		android:id="@+id/camera_image_store"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:onClick="onClick"
+		android:text="Compress &amp; store Camera Image"/>
+
+	<Button
+		android:id="@+id/gallery_image_crop"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:onClick="onClick"
+		android:text="crop gallery Image"/>
+
+	<Button
+		android:id="@+id/camera_image_crop"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:onClick="onClick"
+		android:text="crop Camera Image"/>
+
+
+</LinearLayout>
