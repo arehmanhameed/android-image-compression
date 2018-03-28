@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             }
             case R.id.camera_image_store: {
-//                intent = new Intent(this, CompressStoreCameraImage.class);
+                intent = new Intent(this, CompressStoreCameraImage.class);
                 break;
             }
             case R.id.gallery_image_crop: {

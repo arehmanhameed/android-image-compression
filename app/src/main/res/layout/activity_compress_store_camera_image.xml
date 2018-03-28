@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.arehmanhameed.imagecompression.CompressStoreCameraImage">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_above="@+id/get_gallery_image"
+			android:orientation="vertical">
+
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="1">
+
+				<ImageView
+					android:id="@+id/original_image"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:text="Original"
+					android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+					android:textSize="26sp" />
+			</FrameLayout>
+
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="1">
+
+				<ImageView
+					android:id="@+id/scaled_image"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:text="Compressed"
+					android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+					android:textSize="26sp" />
+			</FrameLayout>
+		</LinearLayout>
+
+		<Button
+			android:id="@+id/get_gallery_image"
+			android:layout_width="match_parent"
+			android:layout_height="56dp"
+			android:layout_alignParentBottom="true"
+			android:onClick="onClickGetCameraImage"
+			android:text="capture image" />
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/progress_layout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#8000"
+		android:gravity="center"
+		android:visibility="gone">
+
+		<ProgressBar
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</RelativeLayout>
+</RelativeLayout>
