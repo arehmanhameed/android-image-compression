@@ -29,10 +29,10 @@
 				<category android:name="android.intent.category.LAUNCHER"/>
 			</intent-filter>
 		</activity>
-		<activity android:name=".CompressGalleryImage">
-		</activity>
-		<activity android:name=".CompressCameraImage">
-		</activity>
+
+		<activity android:name=".CompressGalleryImage"/>
+		<activity android:name=".CompressCameraImage"/>
+		<activity android:name=".CompressStoreGalleryImage"/>
 	</application>
 
 </manifest>
