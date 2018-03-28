@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             }
             case R.id.gallery_image_store: {
-//                intent = new Intent(this, CompressStoreGalleryImage.class);
+                intent = new Intent(this, CompressStoreGalleryImage.class);
                 break;
             }
             case R.id.camera_image_store: {
